@@ -1,0 +1,21 @@
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;background:#030914;font-family:Arial,Helvetica,sans-serif;color:#fff;overflow-x:hidden}
+body{display:grid;place-items:center}
+.page{width:100%;min-height:100svh;display:grid;place-items:center;padding:0;background:radial-gradient(circle at 50% 18%,#102444 0,#030914 58%,#01040a 100%)}
+.invite{position:relative;width:min(100vw,480px,66.66svh);aspect-ratio:2/3;box-shadow:0 0 60px rgba(0,0,0,.7);overflow:hidden;background:#071120}
+.poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;z-index:1}
+.hit{position:absolute;display:block;border-radius:16px;z-index:5;-webkit-tap-highlight-color:rgba(255,255,255,.18)}
+.hit:active{background:rgba(255,255,255,.14);box-shadow:0 0 30px rgba(255,255,255,.2)}
+.hit-location{left:17.5%;top:70.2%;width:20.0%;height:12.9%}
+.hit-confirm{left:40.1%;top:70.2%;width:20.3%;height:12.9%}
+.hit-calendar{left:62.8%;top:70.2%;width:20.2%;height:12.9%}
+.music-toggle{position:absolute;right:12px;bottom:12px;z-index:8;width:44px;height:44px;border-radius:999px;border:1px solid rgba(255,174,56,.82);background:rgba(4,10,20,.62);color:#ffb23b;font-size:21px;line-height:1;display:grid;place-items:center;box-shadow:0 0 18px rgba(255,142,22,.45);backdrop-filter:blur(8px);cursor:pointer}
+.music-toggle.playing{background:rgba(255,142,22,.22);color:#fff;box-shadow:0 0 28px rgba(255,142,22,.78)}
+.countdown{position:absolute;z-index:6;right:4%;left:auto;top:8.2%;padding:5px 10px;border:1px solid rgba(255,160,32,.55);border-radius:999px;background:rgba(4,10,20,.68);box-shadow:0 0 16px rgba(255,145,0,.35);backdrop-filter:blur(6px);font-size:clamp(9px,2.4vw,13px);letter-spacing:.3px;color:#ffe3b6;text-align:center;white-space:nowrap}
+.sky{position:absolute;inset:0;z-index:3;pointer-events:none;overflow:hidden}
+.sky::before,.sky::after{content:"";position:absolute;top:-20%;left:0;width:2px;height:2px;border-radius:50%;background:transparent;box-shadow:48px 96px #fff7,158px 38px #ffba6b99,286px 112px #fff8,392px 66px #ffba6bbb,442px 180px #fff6,88px 248px #ffba6b88,338px 292px #fff7,215px 214px #ffba6baa,420px 360px #fff6,125px 412px #ffba6b88;animation:starsFall 8s linear infinite}
+.sky::after{left:40px;animation-duration:11s;animation-delay:-4s;opacity:.65;filter:blur(.2px)}
+@keyframes starsFall{0%{transform:translate3d(0,-90px,0)}100%{transform:translate3d(-70px,760px,0)}}
+@media (min-width:700px){.invite{width:min(92vw,520px,66.66svh);border-radius:18px}.hit{border-radius:18px}}
+@media (max-width:360px){.countdown{top:8%;right:3%;font-size:9px;padding:4px 8px}.music-toggle{width:38px;height:38px;right:8px;bottom:8px}}
+@media (prefers-reduced-motion:reduce){.sky::before,.sky::after{animation:none}}
