@@ -7,126 +7,28 @@
   <meta name="description" content="Convite especial para o Encontro de Pais & Filhos, dia 15/08/2026 às 18h, na Família P7 Church em Itaquera." />
   <meta property="og:title" content="Encontro de Pais & Filhos" />
   <meta property="og:description" content="15/08/2026 às 18h - Família P7 Church, Itaquera" />
-  <meta property="og:image" content="assets/images/pai-filho-abraco.png" />
+  <meta property="og:image" content="assets/convite.png" />
   <meta property="og:type" content="website" />
   <meta name="theme-color" content="#06152b" />
   <link rel="icon" href="assets/images/logo-p7.png" />
-  <link rel="preload" as="image" href="assets/images/logo-p7.png" />
-  <link rel="preload" as="image" href="assets/images/pai-filho-abraco.png" />
+  <link rel="preload" as="image" href="assets/convite.png" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="ambient" aria-hidden="true">
-    <span></span><span></span><span></span><span></span><span></span><span></span>
-  </div>
-
   <main class="page">
-    <section class="hero reveal" aria-labelledby="event-title">
-      <div class="logo-ring">
-        <img src="assets/images/logo-p7.png" alt="Logo Família P7 Church" />
-      </div>
+    <section class="invite" aria-label="Convite Encontro de Pais e Filhos">
+      <div class="sparkles" aria-hidden="true"></div>
+      <img class="poster" src="assets/convite.png" alt="Convite Encontro de Pais e Filhos, dia 15/08/2026 às 18h, na Família P7 Church" />
 
-      <p class="kicker">Convite especial</p>
-      <h1 id="event-title">Encontro de <strong>Pais & Filhos</strong></h1>
-      <p class="subtitle">Um momento especial de interação e conexão entre pais e filhos!</p>
+      <a class="hit hit-location" id="mapLink" target="_blank" rel="noopener noreferrer" aria-label="Ver localização no Google Maps"
+         href="https://www.google.com/maps/search/?api=1&amp;query=Fam%C3%ADlia%20P7%20Church%2C%20Av.%20Adriano%20Bertozzi%2C%20383%20-%20Itaquera%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2008265-000"></a>
 
-      <div class="paint-stroke" aria-label="Alem da Palavra, direcao, interacoes e diversao.">
-        <span>Além da Palavra</span>
-        <span>Direção</span>
-        <span>Interações</span>
-        <span>Diversão</span>
-      </div>
+      <a class="hit hit-confirm" id="confirmLink" target="_blank" rel="noopener noreferrer" aria-label="Confirmar presença pelo formulário"
+         href="https://docs.google.com/forms/d/e/1FAIpQLSfmGXwsv4xjPUTuBOIuuJWrHvPDCYelCngvi69Cu6l7uK4SRw/viewform?usp=publish-editor"></a>
+
+      <button class="hit hit-calendar" id="calendarBtn" type="button" aria-label="Adicionar evento à agenda"></button>
     </section>
-
-    <section class="info-strip reveal" aria-label="Informacoes principais do evento">
-      <article>
-        <span class="icon calendar-icon" aria-hidden="true"></span>
-        <small>Data</small>
-        <strong>15/08/2026</strong>
-        <em>Sábado</em>
-      </article>
-      <article>
-        <span class="icon clock-icon" aria-hidden="true"></span>
-        <small>Horario</small>
-        <strong>18h</strong>
-        <em>A partir das 18h</em>
-      </article>
-      <article>
-        <span class="icon family-icon" aria-hidden="true"></span>
-        <small>Propósito</small>
-        <strong>Conexão</strong>
-        <em>Pais e filhos juntos</em>
-      </article>
-    </section>
-
-    <section class="program reveal" aria-labelledby="program-title">
-      <h2 id="program-title">Vai ter</h2>
-      <div class="program-grid">
-        <article><span aria-hidden="true">01</span><strong>Tempo de qualidade</strong></article>
-        <article><span aria-hidden="true">02</span><strong>Brincadeiras e gincanas</strong></article>
-        <article><span aria-hidden="true">03</span><strong>Interações especiais</strong></article>
-        <article><span aria-hidden="true">04</span><strong>Culto inspirador</strong></article>
-        <article><span aria-hidden="true">05</span><strong>Direção e Palavra</strong></article>
-        <article><span aria-hidden="true">06</span><strong>Churrasquinho delicioso ao final</strong></article>
-      </div>
-    </section>
-
-    <section class="photos reveal" aria-label="Momentos do encontro">
-      <figure class="photo-card tilt-left">
-        <img src="assets/images/pai-filho-abraco.png" alt="Pai abraçando o filho em um encontro familiar" />
-        <figcaption>Tempo de qualidade</figcaption>
-      </figure>
-      <figure class="photo-card tilt-right featured">
-        <img src="assets/images/culto-p7.jpg" alt="Culto com pessoas reunidas em adoracao na igreja" />
-        <figcaption>Culto inspirador</figcaption>
-      </figure>
-      <figure class="photo-card tilt-left">
-        <img src="assets/images/churrasco.jpg" alt="Churrasco sendo preparado na grelha" />
-        <figcaption>Churrasquinho ao final</figcaption>
-      </figure>
-    </section>
-
-    <section class="location reveal" aria-labelledby="location-title">
-      <div class="pin" aria-hidden="true"></div>
-      <div>
-        <p>Local</p>
-        <h2 id="location-title">Família P7 Church</h2>
-        <address>Av. Adriano Bertozzi, 383 - Itaquera<br />São Paulo - SP, 08265-000</address>
-      </div>
-    </section>
-
-    <section class="actions reveal" aria-label="Acoes do convite">
-      <a class="action action-map" id="mapLink" href="https://www.google.com/maps/search/?api=1&amp;query=Fam%C3%ADlia%20P7%20Church%2C%20Av.%20Adriano%20Bertozzi%2C%20383%20-%20Itaquera%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2008265-000" target="_blank" rel="noopener noreferrer" aria-label="Ver localização da Família P7 Church no Google Maps">
-        <span class="action-icon pin-small" aria-hidden="true"></span>
-        <strong>Ver localização</strong>
-        <small>Como chegar</small>
-      </a>
-      <a class="action action-confirm" id="confirmLink" href="https://docs.google.com/forms/d/e/1FAIpQLSfmGXwsv4xjPUTuBOIuuJWrHvPDCYelCngvi69Cu6l7uK4SRw/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer" aria-label="Confirmar presença pelo formulário">
-        <span class="action-icon check-small" aria-hidden="true"></span>
-        <strong>Confirmar presença</strong>
-        <small>Clique e responda</small>
-      </a>
-      <button class="action action-calendar" id="calendarBtn" type="button" aria-label="Adicionar o encontro à agenda">
-        <span class="action-icon cal-small" aria-hidden="true"></span>
-        <strong>Adicionar à agenda</strong>
-        <small>Não perder esse dia</small>
-      </button>
-    </section>
-
-    <section class="verse reveal" aria-label="Versiculo">
-      <p>"Ensina a criança no caminho em que deve andar, e ainda quando for velho não se desviará dele."</p>
-      <strong>Provérbios 22:6</strong>
-    </section>
-
-    <footer class="footer">
-      <p>Família P7 Church - Encontro de Pais & Filhos</p>
-    </footer>
   </main>
-
-  <template id="audio-template">
-    <!-- Estrutura reservada para áudio futuro: adicione um elemento audio aqui quando for necessário. -->
-  </template>
-
   <script src="script.js"></script>
 </body>
 </html>
